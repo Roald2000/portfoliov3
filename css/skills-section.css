@@ -1,0 +1,36 @@
+#skills {
+    display       : flex;
+    flex-direction: column;
+
+
+    place-content: center;
+    place-items  : center;
+
+    gap    : 1em;
+    padding: 1em;
+
+    min-height: 100vh;
+    width     : 80dvw;
+    margin    : 0 auto;
+  
+}
+
+
+#skills .cards {
+    display       : flex;
+    flex-direction: column;
+    gap           : .8em;
+}
+
+#skills .cards .skill-card h2 {
+    padding         : .5em;
+    border-radius: .6em;
+    background-color: var(--background-dark);
+    color           : var(--text-dark);
+    /* margin       : 0 1em; */
+    /* width        :  50dvw; */
+}
+
+#skills .cards .skill-card p {
+    margin: .3em 1.4em;
+}

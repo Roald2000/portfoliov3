@@ -1,0 +1,48 @@
+:root {
+    --background-light       : #E1E8F5;
+    --text-light             : #191E29;
+    --background-dark        : #0B0E14;
+    --text-dark              : #E1E8F5;
+    --background-button      : #191E29;
+    --text-button            : #E1E8F5;
+    --background-button-hover: #262626;
+    --text-button-hover      : #E1E8F5;
+}
+
+:root[data-theme="dark"] {
+    --background-light       : #191E29;
+    --text-light             : #E1E8F5;
+    --background-dark        : #262626;
+    --text-dark              : #E1E8F5;
+    --background-button      : #E1E8F5;
+    --text-button            : #191E29;
+    --background-button-hover: #6f6f6f;
+}
+
+#about {
+    display       : flex;
+    flex-direction: column;
+
+
+    place-content: center;
+    place-items  : center;
+
+    gap    : 1em;
+    padding: 1em;
+
+    min-height: 100vh;
+    width     : 80dvw;
+    margin    : 0 auto;
+}
+
+#about p {
+    text-align: justify;
+    font-size : 1.1rem;
+}
+
+#about p a {
+    padding         : .15em;    
+    background-color: var(--background-dark);
+    color           : var(--text-dark);
+    border-radius   : .5em;     
+}
