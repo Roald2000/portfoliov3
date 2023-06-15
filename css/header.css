@@ -1,0 +1,68 @@
+nav {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-dark);
+}
+
+nav a {
+    color: white;
+}
+
+nav label {
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: .6em;
+    z-index: auto;
+}
+
+nav ul li {
+    color: white;
+}
+
+nav ul li button {
+    border: none;
+    border-radius: .6em;
+    padding: .6em;
+    width: 12dvw;
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        z-index: 50;
+    }
+
+    nav ul {
+        position: absolute;
+        left: -100%;
+        top: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        transition: .5s ease;
+        background: #0007;
+        padding: 1em;
+    }
+
+    nav input[type="checkbox"]:checked~ul {
+        top: 100%;
+
+
+        left: 0;
+    }
+
+    nav label {
+        display: block;
+    }
+}

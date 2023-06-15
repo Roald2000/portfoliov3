@@ -10,39 +10,39 @@
     <link rel="stylesheet" href="./css//home-section.css">
     <link rel="stylesheet" href="./css//skills-section.css">
     <link rel="stylesheet" href="./css//about-section.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 
 <body>
 
-    <header class="container">
+    <nav class="container">
+        <a href="#home">Home</a>
+        <label for="hamburger" class="hamburger-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" id="hamburger" hidden>
         <ul>
+            <li> <a href="#skills">Skills</a></li>
+            <li> <a href="#about">About</a></li>
             <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-        </ul>
-        <ul>
-            <li>📧 | roalddelacruz2000@gmail.com</li>
-            <li>📲 | +63-992-574-4271</li>
-            <li>
-                <!-- <img src="./assets/light-mode.png" alt="" id="toggleBtn"> -->
-                <button id="toggleBtn" type="button">🌛</button>
+                <button id="toggleBtn" type="button">
+                    <i class="fa-solid fa-moon"></i>
+                    <!-- Toggle -->
+                </button>
             </li>
         </ul>
 
-    </header>
+    </nav>
 
     <main class="container">
         <section id="home" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-
             <div class="welcome-container" data-aos="zoom-in">
                 <h1 data-aos-delay="100" data-aos="fade-left">Hi! My Name is <span>Roald</span></h1>
+                <br>
                 <h3 data-aos-delay="200" data-aos="fade-right"> Welcome to my portfolio! </h3>
             </div>
             <div class="intro-container" data-aos="zoom-in">

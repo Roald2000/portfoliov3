@@ -20,12 +20,10 @@ toggleBtn.addEventListener('click', function () {
     if (htmlElement.getAttribute('data-theme') === 'dark') {
         htmlElement.setAttribute('data-theme', 'light');
         toPersist('light');
-        toggleBtn.textContent = '🌛'
-        // toggleBtn.src = './assets/dark-mode.png';
+        // toggleBtn.innerHTML = ` <i class="fa-solid fa-moon"></i>`
     } else {
         htmlElement.setAttribute('data-theme', 'dark');
         toPersist('dark');
-        toggleBtn.textContent = '😎'
-        // toggleBtn.src = './assets/light-mode.png';
+        // toggleBtn.innerHTML = ` <i class="fa-solid fa-sun"></i>`
     }
 });
