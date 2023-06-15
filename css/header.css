@@ -8,6 +8,7 @@ nav {
     left: 0;
     width: 100%;
     background-color: var(--background-dark);
+    z-index: 50;
 }
 
 nav a {
@@ -22,8 +23,8 @@ nav label {
 nav ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: .6em;
-    z-index: auto;
 }
 
 nav ul li {
@@ -34,12 +35,13 @@ nav ul li button {
     border: none;
     border-radius: .6em;
     padding: .6em;
-    width: 12dvw;
+    width: 5dvw;
 }
 
 @media screen and (max-width:768px) {
-    nav {
-        z-index: 50;
+
+    nav ul li button {
+        width: 12dvw;
     }
 
     nav ul {
